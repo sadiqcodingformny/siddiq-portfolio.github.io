@@ -154,3 +154,14 @@ body {
     padding: 20px;
     font-size: 1.5rem;
 }
+
+#certifications a:first-of-type {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+#certifications a:first-of-type:hover {
+    text-decoration: none;
+    color: white;
+}
