@@ -1,0 +1,161 @@
+/* #be3144 */
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-font: "Poppins", sans-serif;
+    --main-line-height: 1.4;
+    --color-shadow: #181719;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+
+/* navbar styles */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-red);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#navbar .nav-link {
+    padding: 25px 25px;
+    margin: 0 25px;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+/* welcome section styling */
+
+#welcome-section {
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+#welcome-section h1 span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    color: var(--main-red);
+}
+
+/*  project styles */
+
+#projects {
+    text-align: center;
+    background-color: var(--main-blue);
+    padding: 20px;
+    color: white;
+    border-bottom: 4px solid var(--main-gray);
+}
+
+#projects #profile-link {
+    text-decoration: underline;
+    color: var(--main-red);
+}
+
+/* contact syling */
+
+#socials {
+    text-align: center;
+    background-color: var(--main-gray);
+    padding: 20px;
+    color: white;
+    height: 830px;
+}
+
+#socials a {
+    text-decoration: none;
+    color: var(--main-red);
+    line-height: var(--main-line-height);
+    padding: 10px;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px var(--color-shadow);
+}
+
+#socials a i {
+    margin-right: 7px;
+}
+
+#socials h1 {
+    font-size: 6rem;
+}
+
+#socials .subtitle {
+    line-height: var(--main-line-height);
+    margin-bottom: 3.5em;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#social-icons a:hover * {
+    text-shadow: none;
+    border: none;
+    transform: translateY(-20%);
+}
+
+footer {
+    background-color: var(--main-red);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 728px) {
+    #socials .subtitle {
+        font-size: 2rem;
+    }
+
+    #socials h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-section h1 span {
+        font-size: 1.5rem;
+    }
+
+    #socials {
+        font-size: 1rem
+    }
+
+    #socials a {
+        font-size: 1rem;
+    }
+}
