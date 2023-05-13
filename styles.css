@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -79,6 +80,7 @@ body {
     padding: 20px;
     color: white;
     border-bottom: 4px solid var(--main-gray);
+    height: 100vh;
 }
 
 #projects #profile-link {
@@ -86,76 +88,69 @@ body {
     color: var(--main-red);
 }
 
+/* certification stylings */
+
+#certifications {
+    padding: 20px;
+    background-color: #181719;
+    color: white;
+    height: 75vh;
+}
+
+#certifications h1#cert-title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+#certifications #cert {
+    height: 400px;
+}
+
 /* contact syling */
 
 #socials {
-    text-align: center;
-    background-color: var(--main-gray);
-    padding: 20px;
+    height: 50vh;
     color: white;
-    height: 830px;
-}
-
-#socials a {
-    text-decoration: none;
-    color: var(--main-red);
-    line-height: var(--main-line-height);
-    padding: 10px;
-    font-size: 1.8rem;
-    text-shadow: 2px 2px 2px var(--color-shadow);
-}
-
-#socials a i {
-    margin-right: 7px;
+    background-color: #303841;
+    text-align: center;
 }
 
 #socials h1 {
     font-size: 6rem;
 }
 
-#socials .subtitle {
-    line-height: var(--main-line-height);
-    margin-bottom: 3.5em;
-    font-size: 1.8rem;
+#socials p.subtitle {
+    font-size: 3rem;
     font-style: italic;
-    font-weight: 100;
 }
 
-#social-icons a:hover * {
-    text-shadow: none;
-    border: none;
-    transform: translateY(-20%);
-}
-
-footer {
-    background-color: var(--main-red);
-    color: white;
-    text-align: center;
+#socials #social-icons {
     padding: 20px;
 }
 
-@media screen and (max-width: 728px) {
-    #socials .subtitle {
-        font-size: 2rem;
-    }
+#socials #social-icons a {
+    color: white;
+    padding: 0 20px 0 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-shadow: 4px 6px 8px #181719;
+    transition: all 0.2s ease-in-out;
+}
 
-    #socials h1 {
-        font-size: 3rem;
-    }
+#socials #social-icons a:hover {
+    text-shadow: none;
+}
 
-    #welcome-section h1 {
-        font-size: 3rem;
-    }
+#socials #social-icons a i {
+    margin-right: 7px;
+}
 
-    #welcome-section h1 span {
-        font-size: 1.5rem;
-    }
+/* footer styling */
 
-    #socials {
-        font-size: 1rem
-    }
-
-    #socials a {
-        font-size: 1rem;
-    }
+#footer {
+    background-color: #be3144;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
 }
